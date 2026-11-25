@@ -5,13 +5,23 @@
 
     <application
         android:allowBackup="true"
-        android:label="أثر - ATHAR"
+        android:label="@string/app_name"
         android:usesCleartextTraffic="false">
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5604884139107394~8698474325" />
 
-    </application>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
 </manifest>
